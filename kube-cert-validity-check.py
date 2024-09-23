@@ -3,10 +3,9 @@
 """
 # -*- coding: utf-8 -*-
 Time    : 2024/9/23 14:41:37
-project name: test2.py
+project name: kube-cert-validity-check.py
 file    : kube-cert-validity-check.py.py
 """
-#!/usr/bin/env python3
 
 import os
 import logging  # 导入 logging 模块
@@ -53,7 +52,7 @@ def cert_validity_period():
 
 if __name__ == '__main__':
     # 获取环境变量中的 pki 路径
-    kube_pki_path = os.getenv('kube_pki_path', "./pki")
+    kube_pki_path = os.getenv('kube_pki_path', "/etc/kubernetes/pki")
 
     # 设置 Werkzeug 日志级别
     logging.getLogger('werkzeug').setLevel(logging.ERROR)
