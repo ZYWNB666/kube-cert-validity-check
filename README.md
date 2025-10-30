@@ -30,4 +30,5 @@ kube_cert_validity_period{filename="front-proxy-client.crt"} 1.755742141e+09
 ```
 
 ## Deploy
-将 https://github.com/ZYWNB666/kube-cert-validity-check/blob/main/deploy/kube-cert-validity-check.yaml 文件放到 /etc/kubernetes/manifests/ 目录下即可，kubectl会自动检测，然后启动这个pod
+将 https://github.com/ZYWNB666/kube-cert-validity-check/blob/main/deploy/kube-cert-validity-check.yaml 文件放到 /etc/kubernetes/manifests/ 目录下即可，kubelet会自动检测，然后启动这个pod
+
